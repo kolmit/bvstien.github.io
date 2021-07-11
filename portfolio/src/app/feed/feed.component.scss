@@ -4,6 +4,7 @@
 
     .profile {
         width: 60%;
+        margin-top: 5%;
 
         .me {
             align-items: center;
@@ -17,16 +18,23 @@
                 p {
                     color: #910000;
                 }
+                .pin {
+                    padding-right: 5%;
+                }
+            }
+
+            img:hover {
+                filter: brightness(110%);
             }
             
-            .pin {
-                padding-right: 50%;
-            }
+            
         }
     }
 
 
     .skills {
+        user-select: none;
+
         width: 60%;
         align-items: center;
 
@@ -44,6 +52,7 @@
             margin: 0.5rem 0rem;
             padding: 0.75rem;
             box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+
 
             .percentage::after {
                 content: '%';
@@ -70,6 +79,10 @@
                 padding: 0 1em 0 1em;
             }
         }
+
+        .skill:hover {
+            filter: brightness(110%);
+        }
     }
 
     .projects {
@@ -86,7 +99,7 @@
           rgba(255, 255, 255, 0.5)
         );
         border-radius: 1rem;
-        margin: 1rem;
+        margin: 1rem 0rem;
         padding: 1rem;
         box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
 
@@ -99,4 +112,12 @@
             margin-bottom: 1rem;
         }
       }
+
+      .project-card:hover {
+        background: linear-gradient(
+            to left top,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.8)
+          );    
+        }
 }

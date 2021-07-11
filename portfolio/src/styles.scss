@@ -6,13 +6,16 @@
   }
 
 section {
-    margin: 5%;
+    margin-bottom: 5%;
 }
 
 .section-title {
+    user-select: none;
+
     font-weight: 600;
     font-size: 200%;
-    margin-bottom: 8%;
+    margin: 5%;
+    opacity: 0.8;
 }
 
 

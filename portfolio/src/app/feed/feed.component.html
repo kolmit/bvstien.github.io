@@ -5,8 +5,8 @@
             <img src="assets/images/mesized.png" height="150px" width="150px" alt="Bastien GOUZERCH"/>
             <div class="name">
                 <h1>Bastien GOUZERCH</h1>
-                <p>Full-stack Web Developper</p>
-                <span class="material-icons">where_to_vote</span>
+                <p>Full-stack Web Developer</p>
+                <span class="material-icons pin">where_to_vote</span>
                 <span>Lyon - France</span>
             </div>
         </div>
@@ -17,7 +17,7 @@
     <!-- SKILLS -->
     <section class="flex-column skills">
         <div class="section-title">
-            SKILLS
+            COMPÉTENCES
         </div>
         <div class="skill" *ngFor='let skill of skillMap | keyvalue: keepOrder'>
             <div class="fill" [ngStyle]="{'width.%': skill.value}">
@@ -31,6 +31,9 @@
 
     <!-- PROJECTS -->
     <section class="flex-column projects">
+            <div class="section-title">
+                PROJETS
+            </div>
             <div class="flex-column project-card">
                 <span>Télécommande</span>
                 <span>PWA - Angular - Spring Boot</span>
