@@ -1,0 +1,46 @@
+<div class="flex-column feed-container">
+    <!-- ME -->
+    <section class="flex-column profile">
+        <div class="flex-row me">
+            <img src="assets/images/mesized.png"/>
+            <div class="name">
+                <h1>Bastien GOUZERCH</h1>
+                <p>Full-stack Web Developper</p>
+                <span class="material-icons">where_to_vote</span>
+                <span>Lyon - France</span>
+            </div>
+        </div>
+
+        <div class="flex-row geo">
+        </div>
+    </section>
+    
+    <hr class="divider">
+
+    <!-- SKILLS -->
+    <section class="flex-column skills">
+        <div class="skill" *ngFor='let skill of skillMap | keyvalue: keepOrder'>
+            <div class="fill" [ngStyle]="{'width.%': skill.value}">
+                <div class="tech">{{skill.key}}</div>
+            </div>
+            <div class="percentage">{{skill.value}}</div>
+        </div>        
+    </section>
+
+    <hr class="divider">
+
+    <!-- PROJECTS -->
+    <section class="flex-column projects">
+            <div class="flex-column project-card">
+                <span>Télécommande</span>
+                <span>PWA - Angular - Spring Boot</span>
+                <span>Commander son PC à distance depuis un smartphone (ou n'importe quel terminal)</span>
+            </div>
+            <div class="flex-column project-card">
+                <span>Tic-Tac-Toe</span>
+                <span>Angular - Socket.io - Node.js</span>
+                <span>Un simple tic-tac-toe jouable en ligne :)</span>
+            </div>
+    </section>
+
+</div>

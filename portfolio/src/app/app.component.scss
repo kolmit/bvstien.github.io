@@ -34,16 +34,17 @@ html {
   .container {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: radial-gradient(#ffa938, #4f57c7);
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .glass {
+    margin-top: 5%;
     background: white;
     min-height: 80vh;
-    width: 60%;
+    width: 75%;
     background: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.7),
@@ -52,7 +53,6 @@ html {
     border-radius: 2rem;
     z-index: 2;
     backdrop-filter: blur(2rem);
-    display: flex;
   }
   .circle1,
   .circle2 {
@@ -70,10 +70,10 @@ html {
   
   .circle1 {
     top: 5%;
-    right: 15%;
+    right: 10%;
   }
   .circle2 {
-    bottom: 5%;
+    bottom: 30%;
     left: 10%;
   }
   

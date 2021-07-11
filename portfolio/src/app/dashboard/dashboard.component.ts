@@ -1,3 +1,4 @@
+import { formatDate } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,6 +11,8 @@ export class DashboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let h = '10:10:10';
+    console.log( new Date(formatDate(h, 'hh:mm:ss', 'en')) );
   }
 
 }
