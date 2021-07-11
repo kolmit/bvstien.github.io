@@ -10,15 +10,15 @@
                 <span>Lyon - France</span>
             </div>
         </div>
-
-        <div class="flex-row geo">
-        </div>
     </section>
     
     <hr class="divider">
 
     <!-- SKILLS -->
     <section class="flex-column skills">
+        <div class="section-title">
+            SKILLS
+        </div>
         <div class="skill" *ngFor='let skill of skillMap | keyvalue: keepOrder'>
             <div class="fill" [ngStyle]="{'width.%': skill.value}">
                 <div class="tech">{{skill.key}}</div>
@@ -34,7 +34,17 @@
             <div class="flex-column project-card">
                 <span>Télécommande</span>
                 <span>PWA - Angular - Spring Boot</span>
-                <span>Commander son PC à distance depuis un smartphone (ou n'importe quel terminal)</span>
+                <span>Commander son PC à distance depuis un smartphone (ou n'importe quel terminal).</span>
+            </div>
+            <div class="flex-column project-card">
+                <span>GoMuscu</span>
+                <span>PWA - Angular - Firebase</span>
+                <span>Enregistrer & planifier mes entraînements, suivre ma progression...</span>
+            </div>
+            <div class="flex-column project-card">
+                <span>ValoRemind</span>
+                <span>Angular - Spring Boot</span>
+                <span>Pour enregistrer mes meilleures stratégies sur Valorant !</span>
             </div>
             <div class="flex-column project-card">
                 <span>Tic-Tac-Toe</span>

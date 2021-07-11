@@ -2,40 +2,27 @@
     height: 80%;
     align-items: center;
 
-    section {
-        margin: 7%;
-    }
-
     .profile {
         width: 60%;
-    }
 
-    .me {
-        align-items: center;
-        justify-content: space-evenly;
+        .me {
+            align-items: center;
+            justify-content: space-evenly;
 
-        .name {
-            color: #426696;
-            font-size: 1rem;
-            opacity: 0.8;
+            .name {
+                color: #426696;
+                font-size: 1rem;
+                opacity: 0.8;
 
-            p {
-                color: #910000;
+                p {
+                    color: #910000;
+                }
+            }
+            
+            .pin {
+                padding-right: 50%;
             }
         }
-        
-        .pin {
-            padding-right: 50%;
-        }
-    }
-
-    
-
-    hr.divider {
-        border-top: 5px solid #426696;
-        border-radius: 10px;
-        opacity: 0.35;
-        width: 60%;
     }
 
 
@@ -66,14 +53,15 @@
                 border-radius: 0.5rem;
                 height: 28px;
                 background-color: #47b5ffc0;
-                font-weight: 600;
+                font-weight: 500;
 
                 .tech {
                     border-top-left-radius: 0.5rem;
                     border-bottom-left-radius: 0.5rem;
                     width: 5rem ;
                     height: 28px;
-                    background-color: #ff4747c0;
+                    color: aliceblue;
+                    background-color: #004e81c0;
                     padding: 0 1em 0 1em;
                 }
             }
