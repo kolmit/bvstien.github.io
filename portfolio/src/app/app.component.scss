@@ -1,30 +1,3 @@
-/*section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
-}
-
-.container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-    scroll-padding: 100px;
-}
-
-.one {
-    background: rgb(250, 157, 91);
-}
-.two {
-    background: rgb(104, 255, 255);
-}
-.three {
-    background: rgb(52, 185, 52);
-}
-.four {
-    background: rgb(255, 183, 0);
-}*/
 html {
     margin: 0;
     padding: 0;
@@ -55,8 +28,7 @@ html {
     z-index: 2;
     backdrop-filter: blur(2rem);
   }
-  .circle1,
-  .circle2 {
+  .circle {
     background: white;
     background: linear-gradient(
       to right bottom,
@@ -76,6 +48,18 @@ html {
   .circle2 {
     bottom: 30%;
     left: 10%;
+  }
+  .circle3 {
+    bottom: 50%;
+    left: 30%;
+  }
+  .circle4 {
+    bottom: 70%;
+    left: 50%;
+  }
+  .circle5 {
+    top: 90%;
+    right: 70%;
   }
   
   
