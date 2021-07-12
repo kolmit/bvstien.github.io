@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedComponent implements OnInit {
 
-  private skillMap : Map<string, number>;
+  skillMap : Map<string, number>;
+  
   constructor() { }
 
   ngOnInit() {

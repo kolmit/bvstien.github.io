@@ -15,25 +15,46 @@
     <hr class="divider">
 
     <!-- SKILLS -->
-    <section class="flex-column skills">
-        <div class="section-title">
-            COMPÉTENCES
-        </div>
-        <div class="skill" *ngFor='let skill of skillMap | keyvalue: keepOrder'>
-            <div class="fill" [ngStyle]="{'width.%': skill.value}">
-                <div class="tech">{{skill.key}}</div>
+    <div class="section-title">
+        COMPÉTENCES
+    </div>
+    <section class="flex-row skills">
+        <div class="flex-row soft-skills">
+            <div class="flex-column soft-skill">
+                <img src="/assets/images/gearing.png" alt="soft skill"/>
+                <h3>Team Player</h3>
+                <span>J'aime jouer en équipe, dans ma vie pro ou perso :)</span>
             </div>
-            <div class="percentage">{{skill.value}}</div>
-        </div>        
+            <div class="flex-column soft-skill">
+                <img src="/assets/images/gearing.png" alt="soft skill"/>
+                <h3>Team Player</h3>
+                <span>J'aime jouer en équipe, dans ma vie pro ou perso. :)</span>
+            </div>
+            <div class="flex-column soft-skill">
+                <img src="/assets/images/gearing.png" alt="soft skill"/>
+                <h3>Team Player</h3>
+                <span>J'aime jouer en équipe, dans ma vie pro ou perso :)</span>
+            </div>
+        </div>
+        <div class="flex-column hard-skills">
+            
+            <div class="skill" *ngFor='let skill of skillMap | keyvalue: keepOrder'>
+                <div class="fill" [ngStyle]="{'width.%': skill.value}">
+                    <div class="tech">{{skill.key}}</div>
+                </div>
+                <div class="percentage">{{skill.value}}</div>
+            </div>        
+        </div>    
     </section>
 
     <hr class="divider">
 
     <!-- PROJECTS -->
+    <div class="section-title">
+        PROJETS
+    </div>
     <section class="flex-column projects">
-            <div class="section-title">
-                PROJETS
-            </div>
+            
             <div class="flex-column project-card">
                 <span>Télécommande</span>
                 <span>PWA - Angular - Spring Boot</span>
