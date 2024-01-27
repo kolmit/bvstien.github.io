@@ -2,7 +2,7 @@
     <!-- ME -->
     <section class="flex-column profile">
         <div class="flex-row me">
-            <img src="assets/images/mesized.png" height="150px" width="150px" alt="Bastien GOUZERCH"/>
+            <img src="assets/images/mesized.png" height="30%" width="30%" alt="Bastien GOUZERCH"/>
             <div class="name">
                 <h1>Bastien GOUZERCH</h1>
                 <p>Full-stack Web Developer</p>
@@ -46,11 +46,14 @@
     </div>
     <section class="flex-column projects">
             
-            <div class="flex-column project-card">
+            <div class="flex-column project-card" (click)="toggleFold()">
                 <span>Télécommande</span>
                 <span>PWA - Angular - Spring Boot</span>
                 <span>Commander son PC à distance depuis un smartphone (ou n'importe quel terminal).</span>
             </div>
+            <div class="card-body" [@panelState]="folded">
+                <ng-content></ng-content>
+              </div>
             <div class="flex-column project-card">
                 <span>GoMuscu</span>
                 <span>PWA - Angular - Firebase</span>

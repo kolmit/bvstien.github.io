@@ -1,0 +1,52 @@
+.profile-container {
+    background: linear-gradient(rgba(129, 184, 255, 0.2) 10%, transparent);
+    align-items: center;
+    height: 100vh;
+}
+
+.profile{
+    width: 50%;
+    align-items: center;
+    font-size: 150%;
+    line-height: 400%;
+    color: rgb(49, 49, 49);
+}
+
+.name>p>span{
+    color: rgba(4, 113, 255, 0.678);
+}
+
+.name>p>span:hover{
+    color: #e5a154;
+}
+
+.picture {
+    width: 50%;
+    align-items: center;
+}
+
+.picture>img {
+    width: 40vh;
+}
+
+.picture>img:hover {
+    filter: brightness(105%);
+}
+
+.contact {
+    margin-top: 100px;
+    text-align: center;
+    width: 200px;
+    height: 75px;
+    border-radius: 10px;
+
+    color: white;
+    font-weight: 400;
+    background: linear-gradient(135deg,#e5a154, #e38383 150%);
+}
+
+.contact:hover {
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 10px 10px 0 rgb(214 214 214 / 70%);
+}
